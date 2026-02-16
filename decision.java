@@ -1,8 +1,11 @@
+import java.util.*;
 public class decision
 
 {
 public static void main(String [] args){
 
+
+/*
 int year = 2024;
 
 if (year % 400 == 0) {
@@ -14,6 +17,17 @@ else if (year % 4 == 0 && year % 100 != 0) {
 else {
     System.out.println("Not a Leap Year");
 }
+
+
+*/
+
+
+Scanner sc = new Scanner(system.in);
+
+int age = sc.nextInt();
+
+if(
+
 
 
 }

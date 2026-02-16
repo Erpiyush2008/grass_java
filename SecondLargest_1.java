@@ -2,7 +2,7 @@ class SecondLargest_1 {
     public static void main(String[] args) {
         int a = 10, b = 7, c = 15;
 
-        int secondLargest = (a > b)? ((a < c) ? a : (b > c ? b : c))
+        int secondLargest = (a > b) ? ((a < c) ? a : (b > c ? b : c))
                 : ((b < c) ? b : ((a>c)?a:c));
 
         System.out.println(secondLargest);

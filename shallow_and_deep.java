@@ -11,14 +11,14 @@ class Student {
         this.age = age;
     }
 
-    // 🔸 Shallow Copy Constructor
+    //  Shallow Copy Constructor
     Student(Student s) {
         this.name = s.name;
         this.rollNo = s.rollNo;
         this.age = s.age;
     }
 
-    // 🔹 Deep Copy Method
+    //  Deep Copy Method
     Student deepCopy() {
         return new Student(
                 new String(this.name), // new object
