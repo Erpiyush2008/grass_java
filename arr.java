@@ -32,6 +32,37 @@ public class arr {
 
         return result.toString();
     }
+    public static int[] unique(int arr[]) {
+        int n = arr.length;
+        int temp[] = new int[n];
+        int k = 0;
+
+        for (int i = 0; i < n; i++) {
+            boolean isDuplicate = false;
+
+            // check if already present
+            for (int j = 0; j < k; j++) {
+                if (arr[i] == temp[j]) {
+                    isDuplicate = true;
+                    break;
+                }
+            }
+
+            // if not duplicate → add
+            if (!isDuplicate) {
+                temp[k++] = arr[i];
+            }
+        }
+
+        // final array of size k
+        int result[] = new int[k];
+        for (int i = 0; i < k; i++) {
+            result[i] = temp[i];
+        }
+
+        return result;
+    }
+
 
     public static void main(String[] args) {
         int arr[] = {0, 1, 0, 5, 8, 0, 7};
@@ -46,5 +77,12 @@ public class arr {
          String str = "hii my name is christopher nolen";
 
         System.out.println(capitalize(str));
+
+         int res[] = unique(arr);
+
+        for (int num : res) {
+            System.out.print(num + " ");
+        }
     }
+    
 }
