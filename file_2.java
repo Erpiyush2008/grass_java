@@ -13,7 +13,6 @@ public class file_2 {
                 System.out.println("Folder already exists.");
             }
 
-            // ✅ Correct path
             File file = new File(folder, "myfile2.txt");
 
             if (file.createNewFile()) {
