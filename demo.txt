@@ -1,0 +1,2 @@
+Hi this is demo file
+Second line using OutputStream
