@@ -1,0 +1,2 @@
+Hello, this is Java File Handling Example.
+Learning file handling is easy!
